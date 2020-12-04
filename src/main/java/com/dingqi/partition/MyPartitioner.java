@@ -1,4 +1,4 @@
-package com.atguigu.partition;
+package com.dingqi.partition;
 
 import com.atguigu.flow.FlowBean;
 import org.apache.hadoop.io.Text;

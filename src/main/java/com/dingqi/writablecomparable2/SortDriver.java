@@ -1,8 +1,9 @@
-package com.atguigu.writablecomparable2;
+package com.dingqi.writablecomparable2;
 
-import com.atguigu.writablecomparable.FlowBean;
-import com.atguigu.writablecomparable.SortMapper;
-import com.atguigu.writablecomparable.SortReducer;
+import com.dingqi.writablecomparable.FlowBean;
+import com.dingqi.writablecomparable.SortMapper;
+import com.dingqi.writablecomparable.SortReducer;
+import com.dingqi.writablecomparable2.MyPartitioner2;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.Text;

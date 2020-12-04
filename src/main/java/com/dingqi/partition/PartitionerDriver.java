@@ -3,6 +3,7 @@ package com.atguigu.partition;
 import com.atguigu.flow.FlowBean;
 import com.atguigu.flow.FlowMapper;
 import com.atguigu.flow.FlowReducer;
+import com.dingqi.partition.MyPartitioner;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.Text;

@@ -1,4 +1,4 @@
-package com.atguigu.writablecomparable;
+package com.dingqi.writablecomparable;
 
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;

@@ -1,6 +1,6 @@
-package com.atguigu.writablecomparable2;
+package com.dingqi.writablecomparable2;
 
-import com.atguigu.writablecomparable.FlowBean;
+import com.dingqi.writablecomparable.FlowBean;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Partitioner;
 
