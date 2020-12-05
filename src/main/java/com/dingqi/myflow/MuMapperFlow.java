@@ -6,7 +6,7 @@ import org.apache.hadoop.mapreduce.Mapper;
 
 import java.io.IOException;
 
-public class MuMapperFlow extends Mapper<LongWritable, Text,Text,MyFlowBean> {
+public class MuMapperFlow extends Mapper<LongWritable,Text,MyFlowBean,Text> {
     Text numphone = new Text();
     MyFlowBean values = new MyFlowBean();
     @Override
@@ -17,6 +17,6 @@ public class MuMapperFlow extends Mapper<LongWritable, Text,Text,MyFlowBean> {
         long up = Long.parseLong(split[split.length - 3]);
         long dowm = Long.parseLong(split[split.length - 2]);
         values.set(up,dowm);
-        context.write(numphone, values);
+        context.write(values,numphone);
     }
 }

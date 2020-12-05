@@ -3,12 +3,13 @@ package com.dingqi.myflow;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.io.Writable;
+import org.apache.hadoop.io.WritableComparable;
 
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
-public class MyFlowBean implements Writable {
+public class MyFlowBean implements WritableComparable<MyFlowBean> {
 
 
     private Long uplong ;
@@ -68,5 +69,10 @@ public class MyFlowBean implements Writable {
         this.uplong = in.readLong();
         this.downlong = in.readLong();
         this.sum = in.readLong();
+    }
+
+    @Override
+    public int compareTo(MyFlowBean o) {
+        return sum>o.getSum()?-1:sum>o.getSum()?0:1;
     }
 }
